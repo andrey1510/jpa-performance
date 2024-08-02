@@ -1,0 +1,15 @@
+services:
+  dvdrental-db:
+    container_name: dvdrental
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dvdrental
+    ports:
+      - 8118:5432
+    restart: unless-stopped
+
+

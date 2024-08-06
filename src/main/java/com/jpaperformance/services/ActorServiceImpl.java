@@ -2,6 +2,7 @@ package com.jpaperformance.services;
 
 import com.jpaperformance.dto.ActorLastFirstName;
 import com.jpaperformance.repositories.ActorRepository;
+import com.jpaperformance.repositories.FilmRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
